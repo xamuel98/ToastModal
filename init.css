@@ -1,0 +1,340 @@
+.gd-modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    transition: opacity .3s ease;
+    z-index: 9998;
+    justify-content: center;
+    align-items: center;
+}
+
+.gd-modal-backdrop .modal-content {
+    border: 1px solid transparent;
+}
+
+.gd-modal-dialog-centered {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+.overflow-auto {
+    overflow: auto !important;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.fade {
+    transition: opacity 0.2s linear;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -50px);
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 0.5rem;
+    pointer-events: none;
+}
+
+.gd-modal-backdrop .modal-content {
+    border: 1px solid transparent;
+}
+
+.modal-content {
+    width: 100%;
+}
+
+.modal-content {
+    border: 0;
+    border-radius: 0.75rem;
+}
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(31, 45, 61, 0.2);
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.5rem rgb(31 45 61 / 30%);
+    outline: 0;
+}
+
+.border-0 {
+    border: 0 !important;
+}
+
+.modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.25rem;
+    border-bottom: 1px solid #eaecf3;
+    border-top-left-radius: calc(0.75rem - 1px);
+    border-top-right-radius: calc(0.75rem - 1px);
+}
+
+.modal_header--title {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 0;
+}
+
+.modal_header--title.success {
+    color: #0B8EF9;
+}
+
+.modal_header--title.danger {
+    color: #fb4040;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem 1.5rem;
+}
+
+.modal-header {
+    justify-content: center;
+    padding: 2.25rem 0 0;
+}
+
+.modal-content {
+    width: 100%;
+}
+
+.modal__icon--wrapper {
+    width: 100px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: center;
+}
+
+.comono__modal--message {
+    border-radius: 8px;
+}
+
+.comono__modal--message.danger {
+    background: #ffe8e8;
+}
+
+.comono__modal--message.success {
+    background: rgba(223, 240, 255, 1);
+}
+
+.bg-- {
+    transition: .3s;
+}
+
+.comono__modal--message p {
+    padding: 20px 15px 35px 15px;
+    font-size: 16px;
+    color: rgba(64, 64, 64, 1);
+    margin-top: 0;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.wrapper-inner {
+    width: 70px;
+    background-color: transparent;
+    /* overflow: hidden; */
+    position: absolute;
+    border-radius: 50%;
+    height: 70px;
+}
+
+.wrapper-inner::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 100%;
+    background-image: url('curve.svg');
+    bottom: -3px;
+    right: 0px;
+    transform: rotate(164deg);
+    margin-right: -1.71rem;
+}
+
+.wrapper-inner::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 100%;
+    background-image: url('curve.svg');
+    bottom: -3px;
+    left: 1px;
+    transform: rotate(103deg);
+    margin-left: -1.719rem;
+}
+
+.buble {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.buble {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.icon__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon__inner {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.icon__inner.success {
+    background: rgba(223, 240, 255, 1);
+}
+
+.icon__inner.danger {
+    background: #ffe8e8;
+}
+
+.buble .icon__inner img {
+    width: 23px;
+    height: 23px;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.comono__modal--button {
+    margin-top: 31px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+/*
+.btn-primary {
+    color: #fff;
+    background-color: #0B8EF9;
+    border-color: #0B8EF9;
+    box-shadow: none;
+}
+*/
+.modal__close--button.danger {
+    background: #fb4040;
+    border-color: #fb4040;
+    color: #fff;
+    box-shadow: none;
+}
+
+.modal__close--button.success {
+    background: #0B8EF9;
+    border-color: #0B8EF9;
+    color: #fff;
+    box-shadow: none;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    color: #718096;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.9rem 1.75rem;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 8px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto;
+    }
+
+    .modal-content {
+        box-shadow: 0 0.5rem 1rem rgb(31 45 61 / 30%);
+    }
+}
+
+@media (max-width: 600px) {
+    .gd-modal-dialog-centered {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100% - 1rem);
+    }
+}
+
+
+/* @media only screen and (min-width: 992px) {
+    .modal-content {
+        width: 80%;
+    }
+} */
