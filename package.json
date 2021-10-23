@@ -1,0 +1,22 @@
+{
+  "name": "toastmodal",
+  "version": "1.0.0",
+  "description": "A toast modal package",
+  "main": "ToastModal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xamuel98/ToastModal.git"
+  },
+  "keywords": [
+    "Toast"
+  ],
+  "author": "Samuel Sanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xamuel98/ToastModal/issues"
+  },
+  "homepage": "https://github.com/xamuel98/ToastModal#readme"
+}
