@@ -1,4 +1,4 @@
-.gd-modal-backdrop {
+/* .gd-modal-backdrop {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -174,7 +174,6 @@
 .wrapper-inner {
     width: 70px;
     background-color: transparent;
-    /* overflow: hidden; */
     position: absolute;
     border-radius: 50%;
     height: 70px;
@@ -267,14 +266,7 @@
     display: block;
     width: 100%;
 }
-/*
-.btn-primary {
-    color: #fff;
-    background-color: #0B8EF9;
-    border-color: #0B8EF9;
-    box-shadow: none;
-}
-*/
+
 .modal__close--button.danger {
     background: #fb4040;
     border-color: #fb4040;
@@ -333,8 +325,208 @@
 }
 
 
-/* @media only screen and (min-width: 992px) {
-    .modal-content {
-        width: 80%;
+ */
+
+
+ .gd-modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    transition: opacity .3s ease;
+    z-index: 9998;
+    justify-content: center;
+    align-items: center;
+}
+
+.gd-modal-backdrop .modal-content {
+    border: 1px solid transparent;
+}
+
+.gd-modal-dialog-centered {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+.modal_header--title {
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 0;
+}
+
+.modal_header--title.success,
+.modal_header--title.default {
+    color: #0B8EF9;
+}
+
+.modal_header--title.danger {
+    color: #fb4040;
+}
+
+.modal-header.toastmodal-header {
+    justify-content: center;
+    padding: 2.25rem 0 0;
+}
+
+.modal__icon--wrapper {
+    width: 100px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: center;
+}
+
+.comono__modal--message {
+    border-radius: 8px;
+}
+
+.comono__modal--message.danger {
+    background: #ffe8e8;
+}
+
+.comono__modal--message.success,
+.comono__modal--message.default {
+    background: rgba(223, 240, 255, 1);
+}
+
+.bg-- {
+    transition: .3s;
+}
+
+.wrapper-inner {
+    width: 70px;
+    background-color: transparent;
+    /* overflow: hidden; */
+    position: absolute;
+    border-radius: 50%;
+    height: 70px;
+}
+
+.wrapper-inner::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 100%;
+    background-image: url('curve.svg');
+    bottom: -3px;
+    right: 0px;
+    transform: rotate(164deg);
+    margin-right: -1.71rem;
+}
+
+.wrapper-inner::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-size: 100%;
+    background-image: url('curve.svg');
+    bottom: -3px;
+    left: 1px;
+    transform: rotate(103deg);
+    margin-left: -1.719rem;
+}
+
+.buble {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.buble {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.icon__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon__inner {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.icon__inner.success,
+.icon__inner.default {
+    background: rgba(223, 240, 255, 1);
+}
+
+.icon__inner.danger {
+    background: #ffe8e8;
+}
+
+.buble .icon__inner img {
+    width: 23px;
+    height: 23px;
+}
+
+.icon__inner svg {
+    width: 32px;
+    height: 32px;
+}
+
+.comono__modal--button {
+    margin-top: 31px;
+    margin-bottom: 15px;
+}
+
+/*
+.btn-primary {
+    color: #fff;
+    background-color: #0B8EF9;
+    border-color: #0B8EF9;
+    box-shadow: none;
+}
+*/
+.modal__close--button.danger {
+    background: #fb4040;
+    border-color: #fb4040;
+    color: #fff;
+    box-shadow: none;
+}
+
+.modal__close--button.success,
+.modal__close--button.default {
+    background: #0B8EF9;
+    border-color: #0B8EF9;
+    color: #fff;
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+    .gd-modal-dialog-centered {
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100% - 1rem);
     }
-} */
+}
