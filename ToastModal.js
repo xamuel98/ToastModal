@@ -137,6 +137,12 @@ class Toast {
                 el.addEventListener('click', (event) => this.options.customButtons[index].onClick(event) );
             });
         }
+
+        if (document.querySelector('.modal-dialog')) {
+            document.querySelector('.modal-dialog').addEventListener('click', (e) => {
+                e.stopPropagation();
+            })
+        }
     
     };
 
