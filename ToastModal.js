@@ -126,8 +126,9 @@ class Toast {
 
         // CLick overlay to close modal
         if(document.querySelector('.gd-modal-backdrop')) {
-            document.querySelector('.gd-modal-backdrop').addEventListener('click', () => {
-                this._close();
+            document.querySelector('.gd-modal-backdrop').addEventListener('click', (e) => {
+                // this._close();
+                e.stopPropagation();
             })
         }
     
